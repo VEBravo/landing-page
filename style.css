@@ -529,7 +529,7 @@ p{
     }
 
     .personal-name-skills-container{
-        align-items: flex-start;
+        align-items: center;
         margin: 3%;
     }
 
@@ -548,5 +548,8 @@ p{
     .wid-cell-container{
         margin: 2% 0;
     }
-    
+
+    .clients-container{
+        margin: 15% 0;
+    }
 }
