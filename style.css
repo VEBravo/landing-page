@@ -95,12 +95,16 @@ p{
     position: sticky;
     top: 10px;
 }
+.myName{
+    font-size: large;
+}
 
 .personal-name-skills-container{
     display: flex;
     margin: 10% 0%;
-    align-items: stretch;
+    align-items: center;
     flex-direction: column;
+    justify-content: center;
 }
 
 .personal-skill-container{
@@ -149,12 +153,6 @@ p{
     align-self: center;
     justify-content: center;
 }
-.personal-info-item-text{
-    font-size: smaller;
-    margin: 0;
-    padding: 0;
-    align-self: center;
-}
 
 .personal-info-item-icon-container{
     display: flex;
@@ -175,13 +173,14 @@ p{
 .personal-info-item-icon-container:hover{
     transform: translateY(-8px);
 }
-    
+
 
 .personal-image-container{
     display: flex;
     align-self: center;
     align-items: center;
     justify-content: center;
+    justify-self: center;
     width: 150px;
     height: 150px;
     border-radius: 25px;
@@ -211,12 +210,11 @@ p{
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    padding: 5% 2%;
+    padding: 8%;
 }
 
 .main-paragraph{
     color: #b7b7b7;
-    width: 900px;
 }
 
 .navlist {
@@ -235,6 +233,7 @@ p{
     padding: 0; /* Elimina relleno adicional */
     box-sizing: border-box; /* Incluye el borde dentro del tamaño total */
     border-radius: 0 0 0 25px;
+    z-index: 9;
 }
 
 .navlist li {
@@ -276,21 +275,28 @@ p{
     display: flex; 
     background-color: #363636;
     padding: 5%;
-    border: 1px solid #6f6f6f;
     border-radius: 15px;
     position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0.8, 0.8);
 }
 
 .wid-cell-icon-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    align-self: center;
     min-width: 45px;
     min-height: 45px;
     max-width: 45px;
     max-height: 45px;
     border-radius: 5px;
     margin: 5px 10px 5px 0px;
+}
+
+.personal-info-item-text{
+    font-size: smaller;
+    margin: 0;
+    padding: 0;
+    align-self: center;
 }
 
 .wid-cell-title{
@@ -301,9 +307,19 @@ p{
     color: rgb(155, 255, 255);
     align-self: center;
     justify-content: center;
-    position: absolute;
     top: 10%;
     left: 22%;
+}
+
+.wid-cell-text{
+    font-size: smaller;
+    padding: 0;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    align-self: center;
+    top: 30%;
+    left: 17%;
 }
 
 #wid-icon{
@@ -311,15 +327,6 @@ p{
     font-size: 250%;
 }
 
-.wid-cell-text{
-    font-size: smaller;
-    margin: 0;
-    padding: 0;
-    align-self: center;
-    position: absolute;
-    top: 30%;
-    margin: 0% 10% 0 5%;
-}
 /* DESDE ACA */
 .clients-container{
     display: flex;
@@ -332,12 +339,12 @@ p{
     flex-direction: column;
     align-content: flex-start;
     justify-content: start;
-    width: 400px;
+    width: 320px;
     height: 175px;
     background-color: #363636;
     border: 1px solid #6f6f6f;
     border-radius: 15px;
-    margin: 5% 1%;
+    margin: 3% 1%;
     position: relative;
 }
 
@@ -374,7 +381,7 @@ p{
     padding: 0;
     color: rgb(155, 255, 255);
     top: -13%;
-    left: 18%;
+    left: 22%;
     margin: 10% 10% 5% 10%;
     justify-content: center;
 }
@@ -460,3 +467,55 @@ p{
     font-size: 0.9rem;
     color: #94a3b8;
   }
+
+@media (max-width: 900px) {
+    .main{
+        flex-direction: column;
+    }
+
+    .personal-info-container{
+        flex-direction: row;
+        width: 100%;
+        position: relative;
+    }
+
+    .personal-name-skills-container{
+        align-items: flex-start;
+        margin: 3%;
+    }
+    
+    .separator-personal-info{
+        display: none;
+    }
+
+    .personal-info-item-container{
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+        margin: 0 0 0 10%;
+    }
+
+    .main-container{
+        width: 100%;
+        margin: 5% 0;
+        padding: 8%;
+    }
+
+    .wid-cell-icon-container{
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 762px){
+    .navlist{
+        display: none;
+    }
+    .main-container{
+        padding: 8%;
+    }
+
+    .wid-cell-icon-container{
+        width: 50%;
+    }
+}
