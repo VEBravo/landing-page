@@ -519,3 +519,34 @@ p{
         width: 50%;
     }
 }
+
+@media (max-width: 440px){
+
+    .personal-info-container{
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+    }
+
+    .personal-name-skills-container{
+        align-items: flex-start;
+        margin: 3%;
+    }
+
+    .personal-info-item-container{
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+        margin: 0 0 0 10%;
+    }
+
+    .what-im-doing-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .wid-cell-container{
+        margin: 2% 0;
+    }
+    
+}
