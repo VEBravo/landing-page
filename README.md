@@ -4,7 +4,7 @@ Este es una Landing Page personal hecha exclusivamente con HTML y CSS. En este p
 ## Imagen
 ¡Haga click en la imagen para interactuar con la página!
 <div style="text-align: center;">
-  <a href="https://form-con-validacion.netlify.app/" target="_blank">
+  <a href="https://my-landing-page-valentin-e-bravo.netlify.app/" target="_blank">
     <img src="assets/imagen.png" alt="Imagen formulario" width=100%>
   </a>
 </div>
